@@ -51,9 +51,12 @@
             background: rgb(187, 168, 168);
         }
     </style>
+    <title>KBK - Atelier 2 - Philippe C. Léger</title>
 </header>
 
 <body>
+    <h1>KBK - Atelier 2</h1>
+    <h2>Philippe C. Léger - 201332206</h2>
     <div id="trackBarContainer" style="width:600px;">
         <h1>Level <input type="text" id="level" value="0.0" /></h1>
         <svg id="trackbar" viewBox="0 0 1562 255">
@@ -233,7 +236,6 @@
 
     trackbar.addEventListener("pointerup", function (e) {
         e.target.releasePointerCapture(e.pointerId);
-        console.log("pointerup");
         mouseIsDown = false;
     });
 
